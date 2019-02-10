@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: #935d8c;
+  background-image: url(../img/overlay.png),
+    linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+}
+
+.logo {
+  display: flex;
+  margin: 150px;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.logo > a > svg {
+  width: 150px;
+  fill: #ffffff;
+  align-self: center;
+}
+
+.logo > h1 {
+  font-size: 3.25em;
+  margin-top: 20px;
+}
+
+.logo > h2 {
+  font-size: 1.25em;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.content {
+  margin: 0 auto;
+  background-color: #ffffff;
+  width: 85%;
+  border-radius: 0.25em;
+}
+
+.content > nav {
+  padding: 1.25em;
+  background-color: #f7f7f7;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+  text-align: center;
+}
+
+.content > nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content > nav > ul > li {
+  transition: margin 0.2s ease;
+  display: inline-block;
+  margin: 0 0.35em;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.content > nav > ul > li > a {
+  background-color: #ffffff;
+  transition: font-size 0.2s ease;
+  display: inline-block;
+  height: 2.25em;
+  line-height: 2.25em;
+  padding: 0 1.5em;
+  border: 0;
+  border-radius: 8px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.content > nav > ul > li > a:hover {
+  background-color: #edeeef;
+}
+
+.content > section {
+  margin-bottom: 10em;
+}
+
+.content > section > article {
+  padding: 4em;
+  border-bottom: solid 1px #dddddd;
+}
+
+.content > section > article > header {
+  display: flex;
+  flex-direction: row;
+}
+
+.content > section > article > header > div {
+  width: 65%;
+}
+
+.content > section > article > header > div > h3 {
+  color: #636363;
+  font-size: 2em;
+}
+
+.content > section > article > header > div > p {
+  font: inherit;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: justify;
+}
+
+.content > section > article > header > div > h3::after {
+  display: block;
+  content: "";
+  width: 3.25em;
+  height: 2px;
+  margin: 0.8em 0 1em 0;
+  border-radius: 2px;
+  background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+}
+
+.content > section > article > header > a {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.content > section > article > header > a > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+}
+
+.content > section > article > footer > ul {
+  list-style: none;
+}
+
+.content > section > article > footer > ul > li > a {
+  cursor: pointer;
+  padding: 1em;
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #dddddd;
+  color: #636363 !important;
+  border-radius: 0.5em;
+}
+
+.content > section > article > footer > ul > li > a:hover {
+  background-color: rgba(222, 222, 222, 0.5);
+}
