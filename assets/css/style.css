@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: normal;
 }
 
@@ -19,21 +19,56 @@ body {
   color: #ffffff;
 }
 
+@keyframes logo {
+  0% {
+    transform: rotate(0);
+    opacity: 0.1;
+  }
+
+  90% {
+    transform: rotate(360deg);
+    opacity: 1;
+    width: 200px;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+    width: 150px;
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .logo > a > svg {
   width: 150px;
   fill: #ffffff;
   align-self: center;
+  animation-name: logo;
+  animation-duration: 2s;
 }
 
 .logo > h1 {
   font-size: 3.25em;
   margin-top: 20px;
+  animation-name: title;
+  animation-duration: 3s;
 }
 
 .logo > h2 {
   font-size: 1.25em;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.65);
+  animation-name: title;
+  animation-duration: 3s;
 }
 
 .content {
@@ -86,9 +121,21 @@ body {
   margin-bottom: 10em;
 }
 
+@keyframes article {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .content > section > article {
   padding: 4em;
   border-bottom: solid 1px #dddddd;
+  animation-name: article;
+  animation-duration: 2s;
 }
 
 .content > section > article > header {
@@ -113,7 +160,7 @@ body {
 
 .content > section > article > header > div > h3::after {
   display: block;
-  content: "";
+  content: '';
   width: 3.25em;
   height: 2px;
   margin: 0.8em 0 1em 0;
@@ -133,11 +180,11 @@ body {
   border-radius: 200px;
 }
 
-.content > section > article > footer > ul {
+.content > section > article > .footer > ul {
   list-style: none;
 }
 
-.content > section > article > footer > ul > li > a {
+.content > section > article > .footer > ul > li > a {
   cursor: pointer;
   padding: 1em;
   background-color: transparent;
@@ -146,6 +193,16 @@ body {
   border-radius: 0.5em;
 }
 
-.content > section > article > footer > ul > li > a:hover {
+.content > section > article > .footer > ul > li > a:hover {
   background-color: rgba(222, 222, 222, 0.5);
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5em;
+}
+
+footer > span {
+  font-size: 1.5em;
 }
